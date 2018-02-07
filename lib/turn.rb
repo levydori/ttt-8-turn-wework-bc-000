@@ -5,7 +5,9 @@ def display_board(board)
     print " #{board[i]} "
     if ( i + 1 ) % 3 == 0
       puts ""
-      puts "-----------"
+      if i < 8
+       puts "-----------"
+      end
     else 
       print "|" 
     end
