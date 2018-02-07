@@ -24,7 +24,7 @@ def valid_move?(board, pos)
 end
 
 def position_taken?(board, pos)
-  if ["", " ",nil].include(board[pos])
+  if ["", " ",nil].include?(board[pos])
     return false
   else
     return true
