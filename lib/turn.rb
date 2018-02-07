@@ -32,7 +32,7 @@ def position_taken?(board, pos)
 end
 
 def input_to_index(pos)
-  return pos - 1
+  return pos.to_i - 1
 end
 
 def move(board, pos, token = "X")
