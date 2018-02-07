@@ -48,6 +48,6 @@ def turn(board)
     pos = gets.strip
     pos = input_to_index(pos)
   end
-  move(board,pos, token)
+  move(board,pos)
   display_board(board)
 end
