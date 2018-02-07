@@ -15,13 +15,12 @@ def display_board(board)
   end
 end
 
-# display_board([" "," "," "," "," "," "," "," "," "])
-
 def valid_move?(board, pos)
   if !pos.between(0,8) || position_taken?(board,pos)
     return false
   else
     return true
+  end
 end
 
 def position_taken?(board, pos)
