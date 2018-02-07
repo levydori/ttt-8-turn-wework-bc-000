@@ -41,10 +41,13 @@ end
 
 def move
   puts "Please enter 1-9:"
-  pos = -1
-  while valid_move
   pos = gets.strip
   pos = input_to_index(pos)
-  if ! valid_move?(board, pos)
-    puts
+  while valid_move?(board, pos) == false
+    puts "Not a valud move, please try again"
+    pos = gets.strip
+    pos = input_to_index(pos)
+  end
+  move(board,pos, token)
+  display_board(board)
 end
