@@ -10,3 +10,5 @@ def display_board(board)
       print "|" 
   end
 end
+
+display_board([" "," "," "," "," "," "," "," "," "])
