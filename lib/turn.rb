@@ -38,3 +38,13 @@ end
 def move(board, pos, token = "X")
   board[pos] = token
 end
+
+def move
+  puts "Please enter 1-9:"
+  pos = -1
+  while valid_move
+  pos = gets.strip
+  pos = input_to_index(pos)
+  if ! valid_move?(board, pos)
+    puts
+end
