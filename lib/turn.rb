@@ -31,3 +31,11 @@ def position_taken?(board, pos)
     return true
   end
 end
+
+def input_to_index(pos)
+  return pos - 1
+end
+
+def move(board, pos, token = "X")
+  board[pos] = token
+end
